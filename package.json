@@ -1,0 +1,25 @@
+{
+  "name": "datput",
+  "version": "1.0.0",
+  "description": "cli tool for uploading files into dat",
+  "main": "index.js",
+  "preferGlobal": true,
+  "bin": {
+    "datput": "cli.js"
+  },
+  "author": "max ogden",
+  "license": "BSD",
+  "dependencies": {
+    "request": "^2.34.0",
+    "run-series": "^1.0.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxogden/datput.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maxogden/datput/issues"
+  },
+  "homepage": "https://github.com/maxogden/datput"
+}
