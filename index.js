@@ -1,12 +1,14 @@
 var request = require('request')
 var series = require('run-series')
 var fs = require('fs')
-var api = 'http://localhost:6461/api'
+var localhost = 'http://localhost:6461'
 
-module.exports = function(files) {
+module.exports = function(files, remote) {
+  var api = (remote || localhost) + '/api'
   var fns = files.map(function(f) {
     return function(cb) {
       request.post({url: api, json: true}, function(err, resp, doc) {
+        if (err) return cb(err)
         var uploadURL = api + '/' + doc.id + '/' + f + '?version=' + doc.version
         var upload = request.post({url: uploadURL, json: true}, function(err, resp, updated) {
           if (err) return cb(err)

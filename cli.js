@@ -2,6 +2,6 @@
 
 var datput = require('./')
 
-var files = process.argv.slice(2)
+var argv = require('minimist')(process.argv.slice(2));
 
-datput(files)
+datput(argv._, argv.remote)

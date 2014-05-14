@@ -1,6 +1,6 @@
 {
   "name": "datput",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "cli tool for uploading files into dat",
   "main": "index.js",
   "preferGlobal": true,
@@ -10,6 +10,7 @@
   "author": "max ogden",
   "license": "BSD",
   "dependencies": {
+    "minimist": "^0.1.0",
     "request": "^2.34.0",
     "run-series": "^1.0.2"
   },

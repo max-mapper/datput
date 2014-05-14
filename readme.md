@@ -8,7 +8,9 @@ command line tool for uploading files into dat
 
 ## usage
 
-first, start a local dat server. for now datput expects it to be at http://localhost:6461
+first, have a dat server running somewhere (e.g. via `dat serve`).
+
+you can specify where your server is via `--remote http://mydat`. the default is `http://localhost:6461`
 
 ```sh
 $ datput *.mp3
