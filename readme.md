@@ -11,7 +11,7 @@ command line tool for uploading files into dat
 first, start a local dat server. for now datput expects it to be at http://localhost:6461
 
 ```sh
-$ dat-put *.mp3
+$ datput *.mp3
 {"id":"2014-05-14T12:29:35.796Z-9c163d4a","version":2,"attachments":{"Eyeliner - High Fashion Mood Music - 01 Closeness.mp3":{"hash":"9cfa4b887a69382986b57e343d4a865a34bcbadd"}}}
 {"id":"2014-05-14T12:29:35.864Z-34228b79","version":2,"attachments":{"Eyeliner - High Fashion Mood Music - 02 Scenery.mp3":{"hash":"769350c67e846cb992a075f5e9b02616e72d4992"}}}
 {"id":"2014-05-14T12:29:35.920Z-a863d3ea","version":2,"attachments":{"Eyeliner - High Fashion Mood Music - 03 America.mp3":{"hash":"84918424b07bd83fb8db29a71d317888ebb870e9"}}}
