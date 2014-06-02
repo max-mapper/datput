@@ -9,7 +9,7 @@ module.exports = function(files, remote) {
     return function(cb) {
       request.post({url: api, json: true}, function(err, resp, doc) {
         if (err) return cb(err)
-        var uploadURL = api + '/' + doc.id + '/' + f + '?version=' + doc.version
+        var uploadURL = api + '/' + doc.key + '/' + f + '?version=' + doc.version
         var upload = request.post({url: uploadURL, json: true}, function(err, resp, updated) {
           if (err) return cb(err)
           cb(null, updated)
