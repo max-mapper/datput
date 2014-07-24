@@ -4,7 +4,7 @@ var fs = require('fs')
 var localhost = 'http://localhost:6461'
 
 module.exports = function(files, remote) {
-  var api = (remote || localhost) + '/api'
+  var api = (remote || localhost) + '/api/rows'
   var fns = files.map(function(f) {
     return function(cb) {
       request.post({url: api, json: true}, function(err, resp, doc) {
